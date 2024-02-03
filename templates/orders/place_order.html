@@ -62,7 +62,7 @@
                                                 {% for item in cart_items %}
                                                 <tr>
                                                     <td><img src="{{ item.fooditem.image.url }}" width="40" alt="Food Image"></td>
-                                                    <td><b>{{ item.fooditem }}</b></td>
+                                                    <td><b>{{ item.fooditem.food_title }}</b></td>
                                                     <td>{{ item.quantity }}</td>
                                                     <td>${{ item.fooditem.price }}</td>
                                                 </tr>
